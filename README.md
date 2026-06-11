@@ -24,8 +24,16 @@ Este projeto demonstra a aplicação prática de conceitos avançados de engenha
 
 ---
 
+📄 Licença
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter mais detalhes.
+
+⚠️ Aviso de Isenção de Responsabilidade (Disclaimer)
+Este projeto foi desenvolvido exclusivamente para fins educacionais, acadêmicos e de demonstração de competências em engenharia de software, concorrência e redes.
+
+O uso desta ferramenta para realizar varreduras (scanning) ou testes em sistemas, redes ou IPs sem a autorização prévia, expressa e por escrito do proprietário é de total responsabilidade do usuário final. O desenvolvedor não incentiva, não apoia e não se responsabiliza por quaisquer danos, infrações legais ou uso indevido deste código por terceiros.
 ### 🔧 Instalação e Execução
 
 1. Clone o repositório:
 ```bash
 git clone [https://github.com/MarcosStark/api-security-tools.git](https://github.com/MarcosStark/api-security-tools.git)
+
