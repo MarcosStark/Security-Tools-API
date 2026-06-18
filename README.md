@@ -37,6 +37,7 @@ pip install fastapi uvicorn pydantic
 3. Inicie o servidor de desenvolvimento:
 
 uvicorn main:app --reload
+```
 
 Acesse a documentação interativa do Swagger no seu navegador para testar as requisições: http://127.0.0.1:8000/docs
 
