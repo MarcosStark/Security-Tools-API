@@ -28,7 +28,7 @@ Este projeto demonstra a aplicação prática de conceitos avançados de engenha
 
 1. Clone o repositório:
 ```bash
-git clone [https://github.com/MarcosStark/api-security-tools.git](https://github.com/MarcosStark/api-security-tools.git)
+git clone https://github.com/MarcosStark/api-security-tools.git
 ```
 2. Instale as dependências necessárias:
 ```bash
