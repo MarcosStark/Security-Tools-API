@@ -32,12 +32,10 @@ git clone [https://github.com/MarcosStark/api-security-tools.git](https://github
 
 2. Instale as dependências necessárias:
 
-```bash
 pip install fastapi uvicorn pydantic
 
 3. Inicie o servidor de desenvolvimento:
 
-```bash
 uvicorn main:app --reload
 
 Acesse a documentação interativa do Swagger no seu navegador para testar as requisições: http://127.0.0.1:8000/docs
