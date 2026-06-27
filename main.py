@@ -6,6 +6,7 @@ from pydantic import BaseModel   # Ferramenta para validação de dados e tipage
 import socket                    # Biblioteca nativa para conexões de rede (Sockets de Baixo Nível)
 import threading                 # Biblioteca nativa para travas de memória (Thread Safety)
 import concurrent.futures        # Biblioteca nativa para gerenciamento de pooling de threads
+from fastapi.middleware.cors import CORSMiddleware
 
 # Inicializa a aplicação FastAPI e define o título que aparecerá na documentação automática
 app = FastAPI(
@@ -24,6 +25,15 @@ app = FastAPI(
         "name": "Licença MIT",
         "url": "https://opensource.org/licenses/MIT",
     }
+)
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],            # Permite pedidos de qualquer origem (ficheiros locais)
+    allow_credentials=True,
+    allow_methods=["*"],            # Permite todos os métodos, incluindo OPTIONS e POST
+    allow_headers=["*"],            # Permite todos os cabeçalhos das requisições
 )
 
 # ==============================================================================

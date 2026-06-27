@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Tools - Port Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🔍 Security Tools <span>API v3.0</span></h1>
+            <p>Auditoria de Infraestrutura e Varredura Concorrente de Portas</p>
+        </header>
+
+        <main class="scanner-box">
+            <form id="scanForm">
+                <div class="input-group">
+                    <label for="target">Host Alvo (IP ou Domínio):</label>
+                    <input type="text" id="target" placeholder="ex: scanme.nmap.org ou 192.168.1.1" required>
+                </div>
+
+                <div class="port-range">
+                    <div class="input-group">
+                        <label for="porta_inicio">Porta Inicial:</label>
+                        <input type="number" id="porta_inicio" min="1" max="65535" value="20" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="porta_fim">Porta Final:</label>
+                        <input type="number" id="porta_fim" min="1" max="65535" value="100" required>
+                    </div>
+                </div>
+
+                <button type="submit" id="btnScan">Iniciar Varredura</button>
+            </form>
+        </main>
+
+        <section id="resultsSection" class="results-container hidden">
+            <h2>📊 Resultados da Análise</h2>
+            <div id="statusLoading" class="loading hidden">Escaneando alvos com 50 threads...</div>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Porta</th>
+                            <th>Serviço</th>
+                            <th>Banner / Assinatura</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsTableBody">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
